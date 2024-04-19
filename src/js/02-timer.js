@@ -48,7 +48,12 @@ const options = {
             }
 
             const timeDifference = selectedDate - currentTime;
+            const {days, hours, minutes, seconds } = convertMs(timeDifference);
 
+            refs.days.textContent = days; 
+            refs.hours.textContent = hours; 
+            refs.minutes.textContent = minutes; 
+            refs.seconds.textContent = seconds; 
 
         })
     };
