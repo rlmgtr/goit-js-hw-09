@@ -12,7 +12,7 @@ const { form, delay, step, amount } = refs;
 
 form.addEventListener('submit', promiseGenerator)
 
-function promiseGenerator(event) => {
+function promiseGenerator(event) {
 event.preventDefault();
 let delayValue = Number(delay.value);
 
